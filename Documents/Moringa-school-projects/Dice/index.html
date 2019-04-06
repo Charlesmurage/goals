@@ -6,23 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>Pig Dice</title>
     <script src="js/jquery-3.3.1.js"></script>
 </head>
 
-<body>
+<body background="img/dice.webp">
     <div class="container">
-        <h1> PIG DICE</h1>
+        <div class="jumbotron">
+                <div class="scroll">
+                        <marquee scrollamount="20" direction="right" direction="up" behavior="alternate" >
+                                <h1>PIG DICE</h1></marquee>
+                    </div>
+        
+    </div>
         <div class="main_buttons">
             <div class="row">
                 
-                <div class="col-md-6">
+                <div class="col-md-9">
                         <h2>PLAYER 1</h2>
                     <button type="button" name="button" id="roll-dice1">ROLL DICE</button>
 
                 </div>
                 
-                <div class="col-md-6">
+                <div class="col-md-3">
                         <H2>PLAYER 2</H2>
                     <button type="button" name="button" id="roll-dice2">ROLL DICE</button>
                 </div>
@@ -30,7 +37,6 @@
 
         </div>
     </div>
-    <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <div class="result1">
@@ -43,7 +49,6 @@
                 </div>
             </div>
         </div>
-    </div>
 
 </body>
 <script src="js/scripts.js"></script>

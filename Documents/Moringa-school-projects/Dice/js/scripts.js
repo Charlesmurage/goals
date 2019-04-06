@@ -32,6 +32,7 @@ $(document).ready(function () {
                 alert("You have scored 1!! Back to player 1!");
                 $("button#roll-dice2").hide();
                 $("butoon#roll-dice1").show();
+                
                 $(".result2").html("player 2: 0 and total score is 0");
             } else {
                 $(".result2").html("player 2 current score : " + player2.currentScore + " total score" + player2.totalScore);

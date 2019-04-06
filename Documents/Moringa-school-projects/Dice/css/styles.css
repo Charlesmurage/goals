@@ -1,0 +1,23 @@
+body, html{
+    height: 100%;
+}
+
+h2{
+    color: solid black;
+}
+
+h1{
+    font-style: italic;
+    color: saddlebrown;
+}
+
+.jumbotron{
+margin: 20px;
+padding: 20px;
+background: #D3D3D3;
+}
+.scroll{
+    color: skyblue;
+    font-size: 25px;
+    font-style: bold;
+}
