@@ -32,7 +32,7 @@ $(document).ready(function () {
                 alert("You have scored 1!! Back to player 1!");
                 $("button#roll-dice2").hide();
                 $("butoon#roll-dice1").show();
-                
+
                 $(".result2").html("player 2: 0 and total score is 0");
             } else {
                 $(".result2").html("player 2 current score : " + player2.currentScore + " total score" + player2.totalScore);
@@ -47,12 +47,12 @@ $(document).ready(function () {
     $("button#hold1").click(function () {
         $("button#roll-dice1").hide();
         $("button#roll-dice2").show();
-        $(".result1").html("player 1 current score : "+player1.currentScore + "total score" + player1.totalScore);
+        $(".result1").html("player 1 current score : " + player1.currentScore + "total score" + player1.totalScore);
 
     })
-    $("button#hold2").click(function() {
+    $("button#hold2").click(function () {
         $("button#roll-dice2").hide();
         $("button#roll-dice1").show();
-        $(".result2").html("player 2 current score : "+player2.currentScore + "total score :"  +player2.totalSore);
+        $(".result2").html("player 2 current score : " + player2.currentScore + "total score :" + player2.totalSore);
     })
 })
