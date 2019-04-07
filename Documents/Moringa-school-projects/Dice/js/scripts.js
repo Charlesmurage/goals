@@ -1,3 +1,5 @@
+//BUSINESS LOGIC
+
 $(document).ready(function () {
     function Player(id, currentScore, totalScore) {
         this.id = id;
@@ -6,6 +8,7 @@ $(document).ready(function () {
     player1 = new Player();
     player2 = new Player();
 
+    //UI LOGIC
     $("button#roll-dice1").on("click", function () {
         Player.prototype.currentScore = Math.floor(Math.random() * 6) + 1;
         player1.totalScore += player1.currentScore;
@@ -35,7 +38,7 @@ $(document).ready(function () {
 
                 $(".result2").html("player 2: 0 and total score is 0");
             } else {
-                $(".result2").html("player 2 current score : " + player2.currentScore + " total score : " + player2.totalScore);
+                $(".result2").html("player 2 current score : " + player2.currentScore +  " total score : " + player2.totalScore);
             }
 
             if (player2.totalScore === 100) {
@@ -47,7 +50,7 @@ $(document).ready(function () {
     $("button#hold1").click(function () {
         $("button#roll-dice1").hide();
         $("button#roll-dice2").show();
-        $(".result1").html("player 1 current score : " + player1.currentScore + "total score" + player1.totalScore);
+        $(".result1").html("player 1 current score : " + player1.currentScore + " total score : " + player1.totalScore);
 
     })
     $("button#hold2").click(function () {
@@ -55,4 +58,7 @@ $(document).ready(function () {
         $("button#roll-dice1").show();
         $(".result2").html("player 2 current score : " + player2.currentScore + "total score :" + player2.totalSore);
     })
+    $("button#start").click(function () {
+        $(".row").show();
+})
 })
