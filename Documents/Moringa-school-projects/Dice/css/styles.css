@@ -30,7 +30,7 @@ background: #D3D3D3;
     font-size: 25px;
     font-style: bold;
 }
- .row{
+ .container{
      display: none;
  }
   .result1{
@@ -41,4 +41,10 @@ background: #D3D3D3;
     font-family: "Lobster", Sans-serif;
   }
 
+  .center {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+  }
   

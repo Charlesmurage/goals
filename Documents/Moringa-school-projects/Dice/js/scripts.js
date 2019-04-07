@@ -59,6 +59,7 @@ $(document).ready(function () {
         $(".result2").html("player 2 current score : " + player2.currentScore + "total score :" + player2.totalSore);
     })
     $("button#start").click(function () {
-        $(".row").show();
+        $(".container").slideToggle();
+        
 })
 })
