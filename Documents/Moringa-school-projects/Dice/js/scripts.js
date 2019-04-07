@@ -43,4 +43,16 @@ $(document).ready(function () {
             }
         })
     })
+
+    $("button#hold1").click(function () {
+        $("button#roll-dice1").hide();
+        $("button#roll-dice2").show();
+        $(".result1").html("player 1 current score : "+player1.currentScore + "total score" + player1.totalScore);
+
+    })
+    $("button#hold2").click(function() {
+        $("button#roll-dice2").hide();
+        $("button#roll-dice1").show();
+        $(".result2").html("player 2 current score : "+player2.currentScore + "total score :"  +player2.totalSore);
+    })
 })
