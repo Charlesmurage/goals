@@ -17,7 +17,7 @@ button{
     font-family: "Lobster", Sans-serif;
     background: black;
     border-radius: 15px;
-    border: 60%;
+    box-shadow: #444;
 }
 
 .jumbotron{

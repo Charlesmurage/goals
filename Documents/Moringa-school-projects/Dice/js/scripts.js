@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    function Player(id, score, totalScore) {
+    function Player(id, currentScore, totalScore) {
         this.id = id;
         this.totalScore = 0;
     }
@@ -17,7 +17,7 @@ $(document).ready(function () {
 
             $(".result1").html("player 1: 0 and total score is 0");
         } else {
-            $(".result1").html("player 1 current scrore: " + player1.currentScore + " total score " + player1.totalScore);
+            $(".result1").html("player 1 current scrore: " + player1.currentScore + " total score : " + player1.totalScore);
         }
 
         if (player1.totalScore === 100) {
@@ -35,7 +35,7 @@ $(document).ready(function () {
 
                 $(".result2").html("player 2: 0 and total score is 0");
             } else {
-                $(".result2").html("player 2 current score : " + player2.currentScore + " total score" + player2.totalScore);
+                $(".result2").html("player 2 current score : " + player2.currentScore + " total score : " + player2.totalScore);
             }
 
             if (player2.totalScore === 100) {
