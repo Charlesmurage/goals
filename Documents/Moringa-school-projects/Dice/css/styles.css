@@ -3,7 +3,8 @@ body, html{
 }
 
 h2{
-    color: solid black;
+    font-family: "Lobster", Sans-serif;
+    color: brown;
 }
 
 h1{
@@ -11,7 +12,13 @@ h1{
     color: brown;
     text-shadow:1px 1px 0 #444
 }
-
+button{
+    color: red;
+    font-family: "Lobster", Sans-serif;
+    background: black;
+    border-radius: 15px;
+    border: 60%;
+}
 
 .jumbotron{
 margin: 20px;
